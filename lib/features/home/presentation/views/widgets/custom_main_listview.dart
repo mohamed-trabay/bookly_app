@@ -1,4 +1,4 @@
-import 'package:bookly_app/features/home/presentation/views/widgets/custom_container.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/custom_main_item.dart';
 import 'package:flutter/material.dart';
 
 class CustomListview extends StatelessWidget {
@@ -13,7 +13,7 @@ class CustomListview extends StatelessWidget {
           itemBuilder: (context, index) {
             return const Padding(
               padding: EdgeInsets.symmetric(horizontal: 10),
-              child: CustomContainer(),
+              child: MainItem(),
             );
           }),
     );

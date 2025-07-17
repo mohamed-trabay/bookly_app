@@ -1,0 +1,47 @@
+import 'package:bookly_app/features/home/presentation/views/widgets/custom_book_image.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/rating_row.dart';
+import 'package:flutter/material.dart';
+
+import '../../../../../constants.dart';
+import '../../../../../core/utils/styles.dart';
+
+class BookDetailsSection extends StatelessWidget {
+  const BookDetailsSection({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    var width = MediaQuery.of(context).size.width;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: width * .16),
+          child: const CustomBookImage(),
+        ),
+        const SizedBox(height: 40),
+        const Text(
+          'The Jungle Book',
+          style: Styles.textStyle30,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+        ),
+        const SizedBox(
+          height: 6,
+        ),
+        Text(
+          'Rudyard Kipling',
+          style: Styles.textStyle18.copyWith(
+            color: kWhite70,
+            fontStyle: FontStyle.italic,
+           fontWeight: FontWeight.w500,
+          ),
+        ),
+        const SizedBox(
+          height: 16,
+        ),
+        RatingRow(),
+
+      ],
+    );
+  }
+}

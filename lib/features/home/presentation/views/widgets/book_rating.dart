@@ -3,15 +3,17 @@ import 'package:flutter/material.dart';
 import '../../../../../constants.dart';
 import '../../../../../core/utils/styles.dart';
 
-class RatingRow extends StatelessWidget {
-  const RatingRow({super.key});
+class BookRating extends StatelessWidget {
+  const BookRating({super.key});
 
   @override
   Widget build(BuildContext context) {
     return  Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const Icon(
           Icons.star_rounded,
+          size: 16,
           color: Color(0xffFFDD4F),
         ),
         const SizedBox(

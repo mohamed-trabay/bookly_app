@@ -13,7 +13,7 @@ class BookDetailsSection extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
+
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .16),
@@ -34,19 +34,21 @@ class BookDetailsSection extends StatelessWidget {
           style: Styles.textStyle18.copyWith(
             color: kWhite70,
             fontStyle: FontStyle.italic,
-           fontWeight: FontWeight.w500,
+            fontWeight: FontWeight.w500,
           ),
         ),
         const SizedBox(
           height: 16,
         ),
-         const BookRating(),
+        const BookRating(),
         const SizedBox(
           height: 37,
         ),
         const BooksAction(),
 
       ],
-    );
+    )
+
+    ;
   }
 }

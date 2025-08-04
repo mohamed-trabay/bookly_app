@@ -9,7 +9,7 @@ class SearchResultListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       padding: EdgeInsets.zero,
-     //physics: const NeverScrollableScrollPhysics(),
+      //physics: const NeverScrollableScrollPhysics(),
       itemCount: 10,
       itemBuilder: (BuildContext context, int index) {
         return const Padding(

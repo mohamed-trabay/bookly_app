@@ -14,7 +14,7 @@ class CustomSearchTextField extends StatelessWidget {
       hintText: 'Search',
       suffixIcon: Icon(
         Icons.search,
-       color: kWhite50,
+        color: kWhite50,
       ),
     ));
   }

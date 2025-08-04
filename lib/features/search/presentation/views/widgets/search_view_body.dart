@@ -15,12 +15,14 @@ class SearchViewBody extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CustomSearchTextField(),
-          SizedBox(height: 16,),
+          SizedBox(
+            height: 16,
+          ),
           Text('Results', style: Styles.textStyle18),
-          SizedBox(height: 16,),
+          SizedBox(
+            height: 16,
+          ),
           Expanded(child: SearchResultListView()),
-
-
         ],
       ),
     );

@@ -8,7 +8,7 @@ class BookRating extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const Icon(
@@ -28,7 +28,7 @@ class BookRating extends StatelessWidget {
         ),
         Text(
           '(2390)',
-          style: Styles.textStyle14.copyWith(color: kRatingColor ),
+          style: Styles.textStyle14.copyWith(color: kRatingColor),
         )
       ],
     );

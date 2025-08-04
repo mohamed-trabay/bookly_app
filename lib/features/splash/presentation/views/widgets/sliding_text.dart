@@ -12,8 +12,8 @@ class SlidingText extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation: _controller,
-      builder: (context,_) {
-        return  const Text(
+      builder: (context, _) {
+        return const Text(
           'Read Free Books',
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),

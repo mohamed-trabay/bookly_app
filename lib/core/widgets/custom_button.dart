@@ -7,7 +7,9 @@ class CustomButton extends StatelessWidget {
     super.key,
     required this.backgroundColor,
     required this.textColor,
-     this.borderRadius,  this.buttonText='Free preview', this.fontSize,
+    this.borderRadius,
+    this.buttonText = 'Free preview',
+    this.fontSize,
   });
 
   final Color backgroundColor;
@@ -26,13 +28,14 @@ class CustomButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
             backgroundColor: backgroundColor,
             shape: RoundedRectangleBorder(
-                borderRadius:borderRadius ?? BorderRadius.circular( 16))),
+                borderRadius: borderRadius ?? BorderRadius.circular(16))),
         onPressed: () {},
         child: Text(
           buttonText,
-          style: Styles.textStyle20
-              .copyWith(color: textColor, fontWeight: FontWeight.w900,
-          fontSize: fontSize),
+          style: Styles.textStyle20.copyWith(
+              color: textColor,
+              fontWeight: FontWeight.w900,
+              fontSize: fontSize),
         ),
       ),
     );

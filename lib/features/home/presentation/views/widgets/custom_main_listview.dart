@@ -2,8 +2,9 @@ import 'package:bookly_app/features/home/presentation/views/widgets/custom_book_
 import 'package:flutter/material.dart';
 
 class CustomListview extends StatelessWidget {
-  const CustomListview({super.key, });
-
+  const CustomListview({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

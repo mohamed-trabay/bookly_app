@@ -1,4 +1,4 @@
-import 'package:bookly_app/features/home/presentation/views/widgets/custom_main_listview.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/featured_books_listview.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles.dart';
 import 'best_seller_listview.dart';
@@ -18,7 +18,7 @@ class HomeViewBody extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CustomAppBar(),
-                CustomListview(),
+                FeaturedBooksListview(),
                 SizedBox(height: 50),
                 Text('Best Seller', style: Styles.textStyle18),
                 SizedBox(height: 20),

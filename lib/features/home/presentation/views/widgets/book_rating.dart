@@ -4,7 +4,9 @@ import '../../../../../constants.dart';
 import '../../../../../core/utils/styles.dart';
 
 class BookRating extends StatelessWidget {
-  const BookRating({super.key});
+  const BookRating({super.key, required this.ratingNum, required this.rating});
+  final int ratingNum;
+  final int rating;
 
   @override
   Widget build(BuildContext context) {
@@ -19,15 +21,15 @@ class BookRating extends StatelessWidget {
         const SizedBox(
           width: 6.3,
         ),
-        const Text(
-          '4.8',
+        Text(
+          rating.toString(),
           style: Styles.textStyle16,
         ),
         const SizedBox(
           width: 5,
         ),
         Text(
-          '(2390)',
+          '($ratingNum)',
           style: Styles.textStyle14.copyWith(color: kRatingColor),
         )
       ],

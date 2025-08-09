@@ -14,7 +14,10 @@ class SimilarListView extends StatelessWidget {
           itemBuilder: (context, index) {
             return const Padding(
               padding: EdgeInsets.symmetric(horizontal: 5),
-              child: CustomBookImage(),
+              child: CustomBookImage(
+                imageURL:
+                    'https://cdn-icons-png.flaticon.com/128/207/207114.png',
+              ),
             );
           }),
     );

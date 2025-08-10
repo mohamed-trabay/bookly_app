@@ -4,8 +4,8 @@ import '../../../../../constants.dart';
 import '../../../../../core/utils/styles.dart';
 
 class BookRating extends StatelessWidget {
-  const BookRating({super.key, required this.ratingNum, required this.rating});
-  final int ratingNum;
+  const BookRating({super.key, required this.count, required this.rating});
+  final int count;
   final int rating;
 
   @override
@@ -29,7 +29,7 @@ class BookRating extends StatelessWidget {
           width: 5,
         ),
         Text(
-          '($ratingNum)',
+          '($count)',
           style: Styles.textStyle14.copyWith(color: kRatingColor),
         )
       ],

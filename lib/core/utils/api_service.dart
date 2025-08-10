@@ -8,10 +8,6 @@ class ApiService {
   Future<Map<String, dynamic>> get({required String endpoint}) async {
     var response = await _dio.get(
       '$_baseUrl$endpoint',
-      options: Options(
-        receiveTimeout: const Duration(seconds: 5),
-        sendTimeout: const Duration(seconds: 5),
-      ),
     );
     return response.data;
   }

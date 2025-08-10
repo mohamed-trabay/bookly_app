@@ -10,6 +10,7 @@ class CustomButton extends StatelessWidget {
     this.borderRadius,
     this.buttonText = 'Free preview',
     this.fontSize,
+    required this.onPressed,
   });
 
   final Color backgroundColor;
@@ -17,6 +18,7 @@ class CustomButton extends StatelessWidget {
   final BorderRadius? borderRadius;
   final String buttonText;
   final double? fontSize;
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class CustomButton extends StatelessWidget {
             backgroundColor: backgroundColor,
             shape: RoundedRectangleBorder(
                 borderRadius: borderRadius ?? BorderRadius.circular(16))),
-        onPressed: () {},
+        onPressed: onPressed,
         child: Text(
           buttonText,
           style: Styles.textStyle20.copyWith(

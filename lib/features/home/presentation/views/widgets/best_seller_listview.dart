@@ -31,7 +31,19 @@ class BestSellerListview extends StatelessWidget {
         } else if (state is NewestFailure) {
           return CustomErrorWidget(errMessage: state.errMessage);
         } else {
-          return const CustomLoadingIndicator();
+          return SizedBox(
+              height: MediaQuery.of(context).size.height * .4,
+              child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: CustomLoadingIndicator(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  );
+                },
+              ));
         }
       },
     );

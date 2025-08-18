@@ -33,7 +33,21 @@ class SimilarListView extends StatelessWidget {
         } else if (state is SimilarBooksFailure) {
           return CustomErrorWidget(errMessage: state.errMessage);
         } else {
-          return const CustomLoadingIndicator();
+          return SizedBox(
+              height: MediaQuery.of(context).size.height * .15,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 5,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: CustomLoadingIndicator(
+                      aspecracio: 2.6 / 4,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  );
+                },
+              ));
         }
       },
     );
